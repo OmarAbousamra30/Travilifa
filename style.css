@@ -1,0 +1,207 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 1050;
+}
+
+.header .nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header .nav-link:hover {
+  color: #ffd700;
+}
+
+.search-form .form-control {
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.search-form .btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.about-images {
+  position: relative;
+}
+
+.about-images .img-large {
+  width: 260px;
+  height: 350px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.about-images .img-circle-1,
+.about-images .img-circle-2 {
+  width: 180px;
+  height: 290px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  border: 8px solid #fff;
+}
+
+.about-images .img-circle-1 {
+  top: 30px;
+  left: 180px;
+}
+
+.about-images .img-circle-2 {
+  top: 170px;
+  left: 110px;
+}
+
+.section-tag {
+  color: #02634d;
+  font-weight: 600;
+}
+
+.stat-number {
+  color: #02634d;
+  font-weight: 700;
+}
+
+.top-destination img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.testimonial .card {
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.testimonial img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .bi {
+  font-size: 1.25rem;
+}
+
+footer .bi:hover {
+  color: #d1d1d1;
+}
+
+/* ===================== */
+/*    Responsive Media   */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .search-form .form-control,
+  .search-form .btn {
+    font-size: 1rem;
+  }
+
+  .about-images {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .about-images .img-large {
+    width: 200px;
+    height: 280px;
+  }
+
+  .about-images .img-circle-1,
+  .about-images .img-circle-2 {
+    position: static;
+    display: inline-block;
+    margin: 10px 5px;
+    width: 140px;
+    height: 200px;
+  }
+
+  .top-destination img {
+    height: 160px;
+  }
+
+  .testimonial .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-tag,
+  .stat-number {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form .form-control,
+  .search-form .btn {
+    width: 100%;
+    border-radius: 0.5rem !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-images .img-large {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-images .img-circle-1,
+  .about-images .img-circle-2 {
+    width: 120px;
+    height: 160px;
+  }
+
+  footer .bi {
+    font-size: 1rem;
+  }
+}
