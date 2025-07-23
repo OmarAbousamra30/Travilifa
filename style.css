@@ -24,8 +24,16 @@ html, body {
 }
 
 .header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 1050;
+  transition: transform 0.3s ease;
 }
+
 
 .header .nav-link {
   font-weight: 500;
@@ -202,4 +210,8 @@ footer .bi:hover {
   footer .bi {
     font-size: 1rem;
   }
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
