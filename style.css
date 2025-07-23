@@ -25,8 +25,6 @@ html, body {
 
 .header {
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  z-index: 1050;
 }
 
 .header .nav-link {
@@ -123,12 +121,11 @@ footer .bi:hover {
   color: #d1d1d1;
 }
 
-
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 0;
   }
 
   .search-form .form-control,
@@ -170,55 +167,6 @@ footer .bi:hover {
   }
 }
 
-/* ... الكود السابق كما هو ... */
-
-@media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-    text-align: center;
-    padding-top: 3rem;
-  }
-
-  .search-form .form-control,
-  .search-form .btn {
-    font-size: 1rem;
-  }
-
-  .about-images {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
-  .about-images .img-large {
-    width: 200px;
-    height: 280px;
-  }
-
-  .about-images .img-circle-1,
-  .about-images .img-circle-2 {
-    position: static;
-    display: inline-block;
-    margin: 10px 5px;
-    width: 140px;
-    height: 200px;
-  }
-
-  .top-destination img {
-    height: 160px;
-  }
-
-  .testimonial .card {
-    margin-bottom: 1.5rem;
-  }
-
-  .section-tag,
-  .stat-number {
-    text-align: center;
-    display: block;
-  }
-}
-
-/* ✅ تم تفعيلها الآن */
 @media (max-width: 576px) {
   .hero {
     height: auto;
